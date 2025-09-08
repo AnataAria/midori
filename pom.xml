@@ -6,13 +6,6 @@
 
     <repositories>
         <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/sekai-labs/sekai-coffee</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-        <repository>
             <id>central</id>
             <name>Maven Central</name>
             <url>https://repo.maven.apache.org/maven2</url>
@@ -36,6 +29,14 @@
                 <enabled>false</enabled>
             </releases>
         </repository>
+        <repository>
+            <id>nexus-registry</id>
+            <name>Nexus Registry</name>
+            <url>https://registry.arisavinh.dev/repository/maven-releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
     </repositories>
 
     <parent>
@@ -55,9 +56,9 @@
     </modules>
 
     <properties>
-        <java.version>24</java.version>
-        <maven.compiler.source>24</maven.compiler.source>
-        <maven.compiler.target>24</maven.compiler.target>
+        <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <grpc.version>1.70.0</grpc.version>
         <spring.version>3.5.5</spring.version>
