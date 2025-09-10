@@ -1,4 +1,4 @@
-package dev.anataarisa.common.model;
+package dev.anataarisa.common.model.dto;
 
 import lombok.experimental.SuperBuilder;
 
